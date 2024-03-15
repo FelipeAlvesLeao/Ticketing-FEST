@@ -7,7 +7,7 @@
 </br> Also avaliable in english by clicking the "lang en" shield above.
 
 ## Demonstração
-Acesso: [Ticket-Fest](https://65f4b1ebfed07727e5163c13--fantastic-phoenix-5b20db.netlify.app/shows)
+Acesso: [Ticket-Fest](https://fantastic-phoenix-5b20db.netlify.app/)
 
 Nota: essa demonstração usa uma instância gratuíta de servidor provido pela Render. Por isso, solicitações ao servidor após um longo tempo de inatividade precisam esperar cerca de 50 segundos de reinicialização do servidor.
 ## Iniciando 

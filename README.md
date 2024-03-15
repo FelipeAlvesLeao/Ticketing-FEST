@@ -7,7 +7,7 @@
 </br> Disponível em português ao clicar o escudo acima "pt-br".
 
 ## Live Preview
-Access on: [Ticket-Fest](https://65f4b1ebfed07727e5163c13--fantastic-phoenix-5b20db.netlify.app/shows)
+Access on: [Ticket-Fest](https://fantastic-phoenix-5b20db.netlify.app/)
 
 Note: this live preview uses Render's free instance for back-ending hosting. Because of that, requests will take up to 50 seconds after long periods of inactivity and until then the 
 ## Getting Started
