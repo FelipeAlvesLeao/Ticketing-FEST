@@ -81,7 +81,7 @@ export default function RegistrarEvento() {
             };
 
             try {
-                const response = await fetch("http://localhost:8090/api/evento/add", requestOptions);
+                const response = await fetch("https://ticket-fest-latest.onrender.com/api/evento/add", requestOptions);
                 const result = await response.text();
 
                 if (response.ok) {

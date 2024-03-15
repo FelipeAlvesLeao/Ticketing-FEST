@@ -1,12 +1,12 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://dominiosoftware:dominiosoftware@ticketing.l6uame0.mongodb.net/?retryWrites=true&w=majority
-      database: ticketing-api-db
+      uri: 
+      database: 
   security:
     user:
-      name: admin
-      password: admin
+      name: 
+      password: 
 
 server:
   port: 8090

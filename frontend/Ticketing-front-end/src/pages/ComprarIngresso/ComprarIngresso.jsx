@@ -38,7 +38,7 @@ export default function ComprarIngresso() {
     const [cvv, setCvv] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:8090/api/evento/${id}`)
+        fetch(`https://ticket-fest-latest.onrender.com/api/evento/${id}`)
             .then(response => response.json())
             .then(data => {
                 setEventoSelecionado(data);
@@ -120,7 +120,7 @@ export default function ComprarIngresso() {
         };
 
         try {
-            const response = await fetch("http://localhost:8090/api/ticket/add", requestOptions);
+            const response = await fetch("https://ticket-fest-latest.onrender.com/api/ticket/add", requestOptions);
             const result = await response.text();
 
             // Se a compra foi bem-sucedida, redireciona para a página /perfil

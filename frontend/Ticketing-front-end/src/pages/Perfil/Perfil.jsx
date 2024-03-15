@@ -18,14 +18,14 @@ export default function Perfil() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const responseEvento = await fetch(`http://localhost:8090/api/evento/organizador/${userId}`);
+                const responseEvento = await fetch(`https://ticket-fest-latest.onrender.com/api/evento/organizador/${userId}`);
                 if (!responseEvento.ok) {
                     throw new Error('Erro ao buscar eventos');
                 }
                 const dataEvento = await responseEvento.json();
                 setEventos(dataEvento);
 
-                const responseTicket = await fetch(`http://localhost:8090/api/ticket/usuario/${userId}`);
+                const responseTicket = await fetch(`https://ticket-fest-latest.onrender.com/api/ticket/usuario/${userId}`);
                 if (!responseTicket.ok) {
                     throw new Error('Erro ao buscar tickets');
                 }

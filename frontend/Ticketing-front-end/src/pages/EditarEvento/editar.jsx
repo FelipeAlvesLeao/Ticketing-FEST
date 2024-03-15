@@ -23,7 +23,7 @@ export default function Editar() {
     useEffect(() => {
         const fetchEvento = async () => {
             try {
-                const response = await fetch(`http://localhost:8090/api/evento/${id}`);
+                const response = await fetch(`https://ticket-fest-latest.onrender.com/api/evento/${id}`);
                 if (!response.ok) {
                     throw new Error(`Erro ao buscar evento: ${response.statusText}`);
                 }
@@ -91,7 +91,7 @@ export default function Editar() {
         };
 
         try {
-            const response = await fetch(`http://localhost:8090/api/evento/update/${id}`, requestOptions);
+            const response = await fetch(`https://ticket-fest-latest.onrender.com/api/evento/update/${id}`, requestOptions);
             const result = await response.text();
 
             if (response.ok) {

@@ -34,7 +34,7 @@ export default function Register() {
                 redirect: "follow",
             };
 
-            fetch("http://localhost:8090/api/usuario/add", requestOptions)
+            fetch("https://ticket-fest-latest.onrender.com/api/usuario/add", requestOptions)
                 .then((response) => response.text())
                 .then((result) => console.log(result))
                 .catch((error) => console.log("error", error));

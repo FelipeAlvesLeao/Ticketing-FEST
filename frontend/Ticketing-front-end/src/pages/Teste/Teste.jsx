@@ -24,7 +24,7 @@ export default function Teste() {
     const { userId } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:8090/api/evento/${id}`)
+        fetch(`https://ticket-fest-latest.onrender.com/api/evento/${id}`)
             .then(response => response.json())
             .then(data => {
                 setEventoSelecionado(data);

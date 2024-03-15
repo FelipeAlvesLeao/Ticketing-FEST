@@ -7,7 +7,7 @@
 </br> Disponível em português ao clicar o escudo acima "pt-br".
 
 ## Live Preview
-Access on: [Ticket-Fest]()
+Access on: [Ticket-Fest](https://65f4b1ebfed07727e5163c13--fantastic-phoenix-5b20db.netlify.app/shows)
 
 Note: this live preview uses Render's free instance for back-ending hosting. Because of that, requests will take up to 50 seconds after long periods of inactivity and until then the 
 ## Getting Started
@@ -35,7 +35,7 @@ While on the backend/ folder, run the commands
 mvn package
 java -jar target/TicketingApplication.jar
 ```
-Make sure that you're running this command while on a version of the Java 17 JDK.
+Make sure that you're running this command while the JAVA_HOME variable points to a version of the Java 17 JDK.
 ## Built With
 
 * [Spring](https://spring.io/) - Java framework for back-end
@@ -56,47 +56,32 @@ Make sure that you're running this command while on a version of the Java 17 JDK
 * **Giovanna Lyssa** - *Back-end implementation* - [GiovannaLyssa99](https://github.com/GiovannaLyssa99)
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 ## Building
 ### Front-end:
 Inside of frontend/Ticketing-front-end/ run the command 
 ```
-vite build
+npm run build
 ```
-
+The built app will be the dist/ folder.
 ### Back-end: 
 Inside of backend/backend/ run the command 
 ```
 ./mvnw clean install jib:dockerBuild
 ```
 This creates a Docker image of the back-end server.
-To understand the command, adapt it to your needs and configure it to automatically upload to Docker image repositories, check the [Jib Maven docs](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin).
+For more info: [Jib Maven docs](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin).
 ## Deployment
 
 ### Front-end:
-Deploy the build folder made on the "Building" section.
+Deploy the build folder made on the "Building" section after altering the API requests to your own server.
+</br>If you're using a host service, make sure it supports dynamic websites.
 ### Back-end: 
 Deploy either the built project using your preferred IDE or the image of the project.
 For the image, you can acquire it using the command:
 ```
 docker pull felipealvesleao/ticket-fest
 ```
+Note that you need to provide your own MongoDB database details in the ```application.yml``` file
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
@@ -106,3 +91,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [Deploying a Spring Boot Application with Docker Image on render.com](https://medium.com/@nithinsudarsan/deploying-a-spring-boot-application-with-docker-image-on-render-com-9a87f5ce5f72)
 
 </br>
+
+## Final Note
+This project was developed as an university project under a different repository and moved to a new one after it got finished. 
+For the original repository, with commit and merge history, check out [this link](https://github.com/FelipeAlvesLeao?tab=repositories)

@@ -9,7 +9,7 @@ export default function Shows() {
     const [tipoSelecionado, setTipoSelecionado] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:8090/api/evento/all')
+        fetch('https://ticket-fest-latest.onrender.com/api/evento/all')
             .then(response => response.json())
             .then(data => {
                 setEventos(data);

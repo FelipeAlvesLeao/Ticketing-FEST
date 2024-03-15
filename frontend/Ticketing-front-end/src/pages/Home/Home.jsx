@@ -11,7 +11,7 @@ export default function Home() {
 
 
     useEffect(() => {
-        fetch('http://localhost:8090/api/evento/all')
+        fetch('https://ticket-fest-latest.onrender.com/api/evento/all')
             .then(response => response.json())
             .then(data => {
                 // Filtrar apenas os eventos futuros
@@ -44,7 +44,7 @@ export default function Home() {
     return (
         <div className="pageH">
             <Header />
-            <img src="src/assets/splash.png" className="w-full" alt="Splash" />
+            <img src="/splash.png" className="w-full" alt="Splash" />
             <h1 className="textoA">Eventos Próximos</h1>
             <div className="eventoPro">
                 {eventos.map((evento) => {
