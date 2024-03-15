@@ -7,7 +7,9 @@
 </br> Disponível em português ao clicar o escudo acima "pt-br".
 
 ## Live Preview
+Access on: [Ticket-Fest]()
 
+Note: this live preview uses Render's free instance for back-ending hosting. Because of that, requests will take up to 50 seconds after long periods of inactivity and until then the 
 ## Getting Started
 
 Clone this repository to your local environment with
@@ -41,6 +43,9 @@ Make sure that you're running this command while on a version of the Java 17 JDK
 * [React](https://react.dev/) - Javascript library for front-end
 * [NPM](https://www.npmjs.com/) - Dependency Management for back-end
 * [MongoDB](https://www.mongodb.com/) - Database software
+* [Docker](https://www.docker.com/) - Back-end images
+ * [JIB](https://github.com/GoogleContainerTools/jib/tree/master) - Creates docker images from Maven
+
 
 
 ## Authors
@@ -68,17 +73,36 @@ Explain what these tests test and why
 ```
 Give an example
 ```
+## Building
+### Front-end:
+Inside of frontend/Ticketing-front-end/ run the command 
+```
+vite build
+```
 
+### Back-end: 
+Inside of backend/backend/ run the command 
+```
+./mvnw clean install jib:dockerBuild
+```
+This creates a Docker image of the back-end server.
+To understand the command, adapt it to your needs and configure it to automatically upload to Docker image repositories, check the [Jib Maven docs](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin).
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-
+### Front-end:
+Deploy the build folder made on the "Building" section.
+### Back-end: 
+Deploy either the built project using your preferred IDE or the image of the project.
+For the image, you can acquire it using the command:
+```
+docker pull felipealvesleao/ticket-fest
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Acknowledgments
 
+[Deploying a Spring Boot Application with Docker Image on render.com](https://medium.com/@nithinsudarsan/deploying-a-spring-boot-application-with-docker-image-on-render-com-9a87f5ce5f72)
 
 </br>
->>>>>>> 69d1a07 (Moved project to new repo)
