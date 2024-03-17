@@ -1,8 +1,8 @@
 # Ticketing FEST
 > A full-stack web application for event ticketing
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)]([link](https://github.com/FelipeAlvesLeao/Ticketing-FEST/blob/main/README.md))
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)]([link](https://github.com/FelipeAlvesLeao/Ticketing-FEST/blob/main/README.pt-br.md))
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/FelipeAlvesLeao/Ticketing-FEST/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/FelipeAlvesLeao/Ticketing-FEST/blob/main/README.pt-br.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </br> Disponível em português ao clicar o escudo acima "pt-br".
 
