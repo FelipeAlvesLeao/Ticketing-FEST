@@ -1,8 +1,8 @@
 # Ticketing FEST
 >   Uma aplicação web full-stack de criação e venda de tickets.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](link)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](link)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/FelipeAlvesLeao/Ticketing-FEST/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/FelipeAlvesLeao/Ticketing-FEST/blob/main/README.pt-br.md)
 [![Licença: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </br> Also avaliable in english by clicking the "lang en" shield above.
 
